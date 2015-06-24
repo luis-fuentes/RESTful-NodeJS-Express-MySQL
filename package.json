@@ -1,5 +1,5 @@
 {
-  "name": "Api RESTful",
+  "name": "Api-RESTful",
   "description": "Sistema RESTful con Node.js & Mysql",
   "version": "0.0.1",
   "private": true,

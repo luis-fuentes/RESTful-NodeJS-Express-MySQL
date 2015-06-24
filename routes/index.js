@@ -31,7 +31,7 @@ api.get(function(req, res, next) {
     if (err) {
       return next('Cannot Connect');
     }
-    var query = conn.query('SELECT * FROM t_user', function(err, rows) {
+    var query = conn.query('SELECT * FROM usuarios', function(err, rows) {
 
       if (err) {
         console.log(err);
@@ -72,7 +72,7 @@ api.post(function(req, res, next) {
     if (err) {
       return next('Cannot Connect');
     }
-    var query = conn.query('INSERT INTO t_user set ? ', data,
+    var query = conn.query('INSERT INTO usuarios set ? ', data,
       function(err, rows) {
 
         if (err) {
@@ -113,7 +113,7 @@ apiSingle.get(function(req, res, next) {
     if (err) {
       return next('Cannot Connect');
     }
-    var query = conn.query('SELECT * FROM t_user WHERE userId = ? ', [userId],
+    var query = conn.query('SELECT * FROM usuarios WHERE userId = ? ', [userId],
       function(err, rows) {
 
         if (err) {
@@ -161,7 +161,7 @@ apiSingle.put(function(req, res, next) {
     if (err) {
       return next('Cannot Connect');
     }
-    var query = conn.query('UPDATE t_user set ? WHERE userId = ? ',
+    var query = conn.query('UPDATE usuarios set ? WHERE userId = ? ',
       [data, userId],
       function(err, rows) {
 
@@ -188,7 +188,7 @@ apiSingle.delete(function(req, res, next) {
     if (err) {
       return next('Cannot Connect');
     }
-    var query = conn.query('DELETE FROM t_user  WHERE userId = ? ', [userId],
+    var query = conn.query('DELETE FROM usuarios  WHERE userId = ? ', [userId],
       function(err, rows) {
 
         if (err) {
