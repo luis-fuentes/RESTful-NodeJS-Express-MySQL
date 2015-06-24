@@ -4,6 +4,9 @@ Api RESTful con Node.js, Express &amp; Mysql
 ##Install
 
 - Clone Repo
+```
+$git clone https://github.com/YotaCL/RESTful-NodeJS-Express-MySQL.git
+```
 
 - Create a 'test' BD
 
@@ -18,7 +21,7 @@ CREATE TABLE IF NOT EXISTS `usuarios` (
   PRIMARY KEY (`userId`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=6 ;
 ````
--Dump Data in usuarios
+- Dump Data in usuarios
 
 ````
 INSERT INTO `usuarios` (`userId`, `name`, `email`, `password`) VALUES
