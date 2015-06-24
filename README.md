@@ -38,3 +38,6 @@ $npm install
 ```
 $node server.js
 ```
+- Next:
+
+add some style and hash for passwords. 
