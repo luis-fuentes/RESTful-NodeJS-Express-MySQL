@@ -1,13 +1,13 @@
 # RESTful-NodeJS-Express-MySQL
 Api RESTful con Node.js, Express &amp; Mysql
 
-##install
+##Install
 
--Clone Repo
+- Clone Repo
 
--Create a 'test' BD
+- Create a 'test' BD
 
--Create a 'usuarios' table
+- Create a 'usuarios' table
 
 ```
 CREATE TABLE IF NOT EXISTS `usuarios` (
@@ -28,10 +28,10 @@ INSERT INTO `usuarios` (`userId`, `name`, `email`, `password`) VALUES
 (5, 'Sansa Stark', 'sasa@yahoo.com', 'bonbon032932');
 ```
 - Install packages
-
+```
 $npm install
-
+```
 - Run Server
-
+```
 $node server.js
-
+```
