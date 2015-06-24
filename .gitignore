@@ -1,0 +1,15 @@
+### OSX ###
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Thumbnails
+._*
+
+### Node ###
+# Logs
+logs
+*.log
+
+# Deps
+node_modules
